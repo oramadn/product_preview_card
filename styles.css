@@ -87,6 +87,25 @@ h2 {
   line-height: 23px;
 }
 
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: hsl(158, 36%, 37%);
+  min-height: 48px;
+  border-radius: 8px;
+}
+
+.add-to-cart-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: auto;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 100%);
+}
+
 .attribution {
   font-size: 11px; 
   text-align: center;
