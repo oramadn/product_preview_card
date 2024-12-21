@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
-@import url('https://fonts.google.com/specimen/Fraunces');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces');
 
 .main-container {
   max-width: 600px;
@@ -59,6 +59,32 @@ h2 {
   font-weight: 700;
   color: hsl(228, 12%, 48%);
   margin-bottom: 30px;
+}
+
+.pricing {
+  display: flex;
+  gap: 19px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.current-price {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: bolder;
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.original-price {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
 }
 
 .attribution {
