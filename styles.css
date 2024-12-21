@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces");
 
 .main-container {
   max-width: 600px;
@@ -10,14 +10,49 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .card {
   display: flex;
+  align-items: flex-start;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 575px) {
+  .main-container {
+    max-width: 240px;
+    max-height: none;
+    overflow: hidden;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+  }
+  picture {
+    width: 240px;
+    height: 343px;
+    overflow: hidden;
+  }
+  picture img {
+    width: 240px;
+    height: 343px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 body {
   background-color: hsl(30, 38%, 92%);
+}
+
+picture img {
+  max-height: 450px;
+  height: 100%;
+  display: block;
 }
 
 img {
@@ -26,6 +61,8 @@ img {
 
 .description-container {
   padding: 32px;
+  flex: 1; /* Let it shrink as needed */
+  min-width: 0;
 }
 
 h1 {
@@ -44,7 +81,7 @@ h1 {
 
 h2 {
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
@@ -53,12 +90,22 @@ h2 {
 }
 
 .main-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 23px;
   font-size: 14px;
   font-weight: 700;
   color: hsl(228, 12%, 48%);
   margin-bottom: 30px;
+  max-height: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1200px) {
+  .main-body {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .pricing {
@@ -70,7 +117,7 @@ h2 {
 }
 
 .current-price {
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-weight: bolder;
   color: hsl(158, 36%, 37%);
   font-size: 32px;
@@ -79,7 +126,7 @@ h2 {
 }
 
 .original-price {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   font-size: 14px;
@@ -98,7 +145,7 @@ h2 {
 }
 
 .add-to-cart-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   line-height: auto;
   font-size: 12px;
@@ -107,7 +154,7 @@ h2 {
 }
 
 .attribution {
-  font-size: 11px; 
+  font-size: 11px;
   text-align: center;
 }
 
